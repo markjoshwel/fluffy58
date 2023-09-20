@@ -12,14 +12,14 @@ an approachable 60%-like QMK keymap for the [Lily58 Pro RE](https://github.com/k
 - encoder controls:
 
   - **left encoder**
-    - clockwise rotation: mouse down
-    - counter-clockwise rotation: mouse up
+    - clockwise rotation: scroll wheel down
+    - counter-clockwise rotation: scroll wheel up
     - press (default layer): `[`
     - press (lower layer): reset
 
   - **right encoder**
-    - clockwise rotation: volume down
-    - counter-clockwise rotation: volume up
+    - clockwise rotation: volume up
+    - counter-clockwise rotation: volume down
     - press (default layer): `]`
     - press (lower layer): reset
 
