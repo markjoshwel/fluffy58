@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "qmk@latest"
+  ],
+  "shell": {
+    "init_hook": [],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

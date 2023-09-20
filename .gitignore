@@ -1,0 +1,8 @@
+# devbox
+.devbox
+
+# qmk
+obj_*
+*.hex
+*.elf
+*.map
