@@ -1,4 +1,4 @@
-# fluffy58
+# fluffy58 v2
 
 an approachable 60%-like QMK keymap for the [Lily58 Pro RE](https://github.com/kissetfall/Lily58-Pro-RE)
 
@@ -14,16 +14,14 @@ an approachable 60%-like QMK keymap for the [Lily58 Pro RE](https://github.com/k
   - **left encoder**
     - clockwise rotation: scroll wheel down
     - counter-clockwise rotation: scroll wheel up
-    - press (default layer): `[`
-    - press (lower layer): reset
+    - press (adjust layer): reset
 
   - **right encoder**
     - clockwise rotation: volume up
     - counter-clockwise rotation: volume down
-    - press (default layer): `]`
-    - press (lower layer): reset
+    - press (adjust layer): reset
 
-- default qwerty layer:
+- **default qwerty layer**
 
   ```text
   ,-----------------------------------------.                    ,-----------------------------------------.
@@ -40,21 +38,42 @@ an approachable 60%-like QMK keymap for the [Lily58 Pro RE](https://github.com/k
                   `----------------------------'           '------''--------------------'
   ```
 
-- lower layer:
+- **lower layer**
+
+  different variations of keys, access to escape and adjust layer. some access to function keys.
 
   ```text
   ,-----------------------------------------.                    ,-----------------------------------------.
-  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  | F10  | F11  | DEL  |
+  | ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  {   |  }   | DEL  |
   |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-  | F12  |  M1  | MUp  |  M2  |      |      |                    |      |  Up  |      |   7  |   8  |   9  |
+  |      |      |      |      |      |      |                    |      |      |      |      |      |      |
   |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-  |CapsLk|MLeft |Mdown |MRight|      |      |-------.    ,-------| Left | Down |Right |   4  |   5  |   6  |
-  |------+------+------+------+------+------| Reset |    | Reset |------+------+------+------+------+------|
-  |LCTRL |MAccl0|MAccl1|MAccl3|      |      |-------|    |-------|      |      |      |   1  |   2  |   3  |
+  |      |      |      |      |      |      |-------.    ,-------|      |      |      |      |      |      |
+  |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
+  |      |      |      |      |      |      |-------|    |-------|      |      |      |      |  \   |      |
   `-----------------------------------------/       /     \      \-----------------------------------------'
-                  |      | APP  | LAlt | /       /       \      \  |      | RAlt |   0  |
-                  |      |      |      |/       /         \      \ |      |      |      |
-                  `----------------------------'           '------''--------------------'
+                    |      |      |      | /ADJUST /       \ADJUST\  |      |      |      |
+                    |      |      |      |/       /         \      \ |      |      |      |
+                    `----------------------------'           '------''--------------------'
+  ```
+
+- **adjust layer**
+
+  full function key access, mouse control, controller reset and numpad.
+
+  ```text
+  ,-----------------------------------------.                    ,-----------------------------------------.
+  |QWERTY|  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  |      |
+  |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+  | Tab  | F11  | F12  |  M1  | MUp  |  M2  |                    |      |  Up  |      |   7  |   8  |   9  |
+  |------+------+------+------+------+------|                    |------+------+------+------+------+------|
+  |CapsLk|LShift|      |MLeft |Mdown |MRight|-------.    ,-------| Left | Down |Right |   4  |   5  |   6  |
+  |------+------+------+------+------+------| Reset |    | Reset |------+------+------+------+------+------|
+  |LCTRL |      |      |MAccl0|MAccl1|MAccl3|-------|    |-------|      |      |      |   1  |   2  |   3  |
+  `-----------------------------------------/       /     \      \-----------------------------------------'
+                    | MENU | LGUI | LAlt | /       /       \      \  |Enter | RAlt |   0  |
+                    |      |      |      |/       /         \      \ |      |      |      |
+                    `----------------------------'           '------''--------------------'
   ```
 
 ## make it yours
