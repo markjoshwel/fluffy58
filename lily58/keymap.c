@@ -68,37 +68,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  )
 };
 
-// encoder functionality modified from https://github.com/ergohaven/qmk_firmware/blob/master/keyboards/lily58/keymaps/eh/keymap.c
-/* Copyright 2020 Naoki Katahira
-*
-* This program is free software: you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation, either version 2 of the License, or
-* (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-* GNU General Public License for more details.
-*
-* You should have received a copy of the GNU General Public License
-* along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-#ifdef ENCODER_ENABLE
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0) { /* First encoder */
-        if (clockwise) {
-            tap_code(KC_WH_D);
-        } else {
-            tap_code(KC_WH_U);
-        }
-    } else if (index == 1) { /* Second encoder */
-        if (clockwise) {
-            tap_code(KC_VOLD);
-        } else {
-            tap_code(KC_VOLU);
-        }
-    }
-    return true;
-}
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [_QWERTY] = { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN), ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  },
+    [_LOWER]  = { ENCODER_CCW_CW(KC_TRNS,     KC_TRNS      ), ENCODER_CCW_CW(KC_TRNS, KC_TRNS)  },
+};
 #endif

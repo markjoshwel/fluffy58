@@ -23,11 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Select hand configuration */
 
-//#define MASTER_LEFT
-//#define MASTER_RIGHT
+// #define MASTER_LEFT
+// #define MASTER_RIGHT
 #define EE_HANDS
-
-#define USE_SERIAL_PD2
 
 #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 100
@@ -35,8 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Encoder support */
 #define ENCODERS_PAD_A { F5 }
 #define ENCODERS_PAD_B { F4 }
-#define ENCODER_RESOLUTION 2
 #define ENCODERS_PAD_A_RIGHT { F4 }
 #define ENCODERS_PAD_B_RIGHT { F5 }
+#define ENCODER_RESOLUTION 4
 #define ENCODER_DIRECTION_RIGHT 4
 #define ENCODER_DIRECTION_FLIP
