@@ -23,9 +23,11 @@ see [layout](#layout) for a visual representation of the keymap.
 
    this is the default layer, which is active when no other layer is active.
 
-   to access the other layers, you need to hold down the `lower` key.
+   to access the other layers, you need to hold down the `LOWER` key.
 
 2. **lower layer**
+
+   gives acess to variations of keys unable to fit in the default layer.
 
    - numbers 1-8 turn into function keys 1-8.
    - number 9 turns into `{`. (using `(` as a mnemonic - remember the bracket!)
@@ -33,12 +35,18 @@ see [layout](#layout) for a visual representation of the keymap.
    - backspace turns into delete.
    - key `/` turns into `\`. (using `/` as a mnemonic - remember the line!)
 
-   access the layer by holding the `lower` key.
+   access the layer by holding the `LOWER` key.
 
 3. **adjust layer**
 
-   access the layer by holding `lower + adjust`. (the `adjust` key is only accessible in the lower layer.)  
-   you can toggle the layer on by double tapping `adjust`, while holding down `lower`.
+   gives access to all function keys, arrow keys, `MENU` key, caps lock, mouse control,
+   controller reset and numpad.
+
+   access the layer by holding `LOWER` + `ADJUST`. (the `ADJUST` key is only accessible
+   in the lower layer.)
+
+   you can toggle the layer on by double tapping `ADJUST`, while holding down `LOWER`.
+   if toggled, you can exit the layer by pressing `ESC`.
 
 ### layout
 
@@ -61,8 +69,6 @@ see [layout](#layout) for a visual representation of the keymap.
 
 #### lower layer
 
-  different variations of keys, access to escape and adjust layer. some access to function keys.
-
   ```text
   ,-----------------------------------------.                    ,-----------------------------------------.
   | ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  {   |  }   | DEL  |
@@ -79,8 +85,6 @@ see [layout](#layout) for a visual representation of the keymap.
   ```
 
 #### adjust layer
-
-  full function key access, mouse control, controller reset and numpad.
 
   ```text
   ,-----------------------------------------.                    ,-----------------------------------------.
@@ -162,7 +166,7 @@ for more information on flashing in general, see <https://docs.qmk.fm/#/newbs_fl
 
    - flashing from the fluffy58 keymap:
 
-     press `Reset` by holding down `lower` +`adjust`, and pressing down any of your two
+     press `Reset` by holding down `LOWER` +`ADJUST`, and pressing down any of your two
      rotary encoders.
 
    - flashing for the first time/from another keymap without a `Reset` or similar key:
