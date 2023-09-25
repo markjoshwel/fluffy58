@@ -24,7 +24,7 @@ jobs:
       - name: build project
         id: build
         run: |
-          devbox run make
+          devbox run make build
           cp *.hex fluffy58.hex
 
       - name: release

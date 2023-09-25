@@ -27,6 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MASTER_RIGHT
 #define EE_HANDS
 
+#define TAPPING_TOGGLE 2    // no of times needed to tap MO(1) + ADJUST to fully turn on layer
 #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 100
 
